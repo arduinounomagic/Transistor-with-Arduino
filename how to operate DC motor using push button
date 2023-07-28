@@ -1,0 +1,39 @@
+//Transistor using Arduino
+//how to operate DC motor using push button
+//
+//
+
+
+
+const int motor=9;//connect DC motor at analog pin 5
+
+const int push_button = 7; // push button is connected to digital pin number 7
+
+int button_state = 0;//intiallize the state of button
+
+
+void setup()
+  
+{
+   
+  pinMode(motor, OUTPUT);//define motor as output
+  pinMode(push_button, INPUT); //define pushbutton as Input
+  }
+
+void loop()
+{
+   
+   button_state= digitalRead(push_button); //read the status of the push button
+   
+  if (button_state == 1) //check the status of the push button ethier HIGH or LOW
+  {
+  digitalWrite(motor, 1); //if condition is true, motor turns on
+  } 
+  
+  else
+  
+  {
+  digitalWrite(motor, 0); //if condition is false, Lmotor turns off
+  }
+  delay(50);//delay
+}
