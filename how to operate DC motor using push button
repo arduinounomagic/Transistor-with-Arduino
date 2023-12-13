@@ -1,13 +1,14 @@
 //Transistor using Arduino
 //how to operate DC motor using push button
+//Copyright (C) 2007 Free Software Foundation, Inc. <arduinounomagic@gmail.com>
+*
+*For more details please visit:https://www.arduinounomagic.com/how-to-drive-an-npn-transistor-2n2222-as-a-switch-using-arduino/
+*for more projects please visit://www.arduinounomagic.com
 //
-//
-
-
 
 const int motor=9;//connect DC motor at analog pin 5
 
-const int push_button = 7; // push button is connected to digital pin number 7
+const int push_button = 7; // push button is connected to digital PIN 7
 
 int button_state = 0;//intiallize the state of button
 
