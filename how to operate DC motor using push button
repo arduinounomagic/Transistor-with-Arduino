@@ -1,10 +1,10 @@
 //Transistor using Arduino
-//how to operate DC motor using push button
+//How to operate the DC motor using the push button
 //Copyright (C) 2007 Free Software Foundation, Inc. <arduinounomagic@gmail.com>
-*
-*For more details please visit:https://www.arduinounomagic.com/how-to-drive-an-npn-transistor-2n2222-as-a-switch-using-arduino/
-*for more projects please visit://www.arduinounomagic.com
-//
+
+//For more details please visit:https://www.arduinounomagic.com/how-to-drive-an-npn-transistor-2n2222-as-a-switch-using-arduino/
+//For more projects please visit://www.arduinounomagic.com
+
 
 const int motor=9;//connect DC motor at analog pin 5
 
@@ -26,7 +26,7 @@ void loop()
    
    button_state= digitalRead(push_button); //read the status of the push button
    
-  if (button_state == 1) //check the status of the push button ethier HIGH or LOW
+  if (button_state == 1) //check the status of the push button either HIGH or LOW
   {
   digitalWrite(motor, 1); //if condition is true, motor turns on
   } 
